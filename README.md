@@ -5,11 +5,11 @@ The Book Recommendation System is a collaborative filtering-based system designe
 
 
 # Features:-
-User Profiles: Capture user preferences and interactions with books.
-Collaborative Filtering: Identify similar users and books to make personalized recommendations.
-Cosine Similarity: Measure the similarity between user profiles and books using cosine similarity.
-Sparse Data Handling: Effective handling of sparse user-item interaction matrices.
-Scalability: Designed for scalability to handle large datasets efficiently.
+- User Profiles: Capture user preferences and interactions with books.
+- Collaborative Filtering: Identify similar users and books to make personalized recommendations.
+- Cosine Similarity: Measure the similarity between user profiles and books using cosine similarity.
+- Sparse Data Handling: Effective handling of sparse user-item interaction matrices.
+- Scalability: Designed for scalability to handle large datasets efficiently.
 
 
 # Working:-
