@@ -23,11 +23,6 @@ body {
 h1 {
     margin-bottom: 30px;
 }
-.form-control {
-    width: 70%;
-    margin-bottom: 10px;
-}
-
 .btn-warning {
     background-color: #ff9800;
     color: white;
