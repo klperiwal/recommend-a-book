@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="path/to/styles.css">
+</head>
+
+<body style="background-color:black">
+    <nav class="navbar" style="background-color:#00a65a">
+        <a class="navbar-brand">My Book recommender</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Apply animations to the form and recommended books -->
+    <div class="col-md-12 animated fadeIn">
+        <h1 class="text-white" style="font-size:50px">Recommend Books</h1>
+        <form action="/recommend_books" method="post" class="animated slideInUp">
+            <input name="user_input" type="text" class="form-control"><br>
+            <input type="submit" class="btn btn-lg btn-warning">
+        </form>
+        </div>
+
+        {% if data %}
+            {% for i in data %}
+                <div class="col-md-3 animated fadeIn" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{i[2]}}">
+                            <p class="text-white">{{i[0]}}</p>
+                            <h4 class="text-white">{{i[1]}}</h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        </div>
+    </div>
+
+</body>
+</html>
